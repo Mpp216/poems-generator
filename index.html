@@ -3,48 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Poems</title>
   </head>
   <body>
-    <header>
-      <h1>Felling good poems</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the theme of the poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+    <div class="container">
+      <header>
+        <h1>Felling good poems</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the theme of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            id="instructions"
+          />
+          <input type="submit" id="submit-button" />
+        </form>
 
-      <div>
-        the poem will be here
-        <br />
-        the poem will be here
-      </div>
-    </main>
+        <div id="poem">
+          the poem will be here
+          <br />
+          the poem will be here
+        </div>
+      </main>
 
-    <footer>
-      <p>
-        This AI project was coded by
-        <a href="https://github.com/Mpp216" target="_blank"
-          >Maria Preto Pereira</a
-        >
-        and is
-        <a href="https://github.com/Mpp216/poems-generator" target="_blank">
-          on GitHub</a
-        >
-        and
-        <a href="https://ai-creat-poems.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+      <footer>
+        <p>
+          This AI project was coded by
+          <a href="https://github.com/Mpp216" target="_blank"
+            >Maria Preto Pereira</a
+          >
+          and is
+          <a href="https://github.com/Mpp216/poems-generator" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="https://ai-creat-poems.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

@@ -12,12 +12,13 @@
     <div class="container">
       <header>
         <h1>Felling Good Poems</h1>
+        <h2>To make your day a little happier</h2>
       </header>
       <main>
         <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter the theme of the poem"
+            placeholder="Enter the theme of the poem i.e. Sun, Flowers, Cheese"
             autofocus
             required
             autocomplete="off"
@@ -25,8 +26,11 @@
           />
           <input type="submit" id="submit-button" />
         </form>
-
-        <div id="poem"></div>
+        <div class="poem-image">
+          <div class="poem hidden" id="poem">
+            <h3>Be happy</h3>
+          </div>
+        </div>
       </main>
 
       <footer>

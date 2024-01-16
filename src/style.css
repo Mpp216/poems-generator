@@ -1,5 +1,5 @@
 body {
-  background-color: #fbf9e7;
+  background-color: #fefdf5;
 }
 a {
   color: #28250d;
@@ -18,28 +18,38 @@ h1 {
   font-size: 40px;
   color: #28250d;
   text-align: center;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 29px;
+  text-align: center;
+  margin-top: -33px;
+  color: #e5c07c;
 }
 
 form {
-  padding: 20px;
-  background-color: white;
+  padding: 15px;
+  background-color: #fefdf5;
   border-radius: 15px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #instructions {
   padding: 16px;
-  border: 2px solid #fbf9e7;
+  border: 1px solid #483423;
   width: 75%;
   border-radius: 15px;
   line-height: 12px;
+  background-color: #fefdf5;
 }
 
 #submit-button {
   margin-left: 10px;
-  background-color: #fbf9e7;
-  color: #28250d;
+  background-color: #483423;
+  color: #fbf9e7;
   border: 2px solid #fbf9e7;
   border-radius: 15px;
   padding: 16px;
@@ -47,17 +57,44 @@ form {
 }
 
 #poem {
-  font-size: 16px;
-  background-color: white;
-  padding: 20px;
+  font-size: 18px;
+  background-color: #fefefa;
+  padding: 18px;
   line-height: 2;
   border-radius: 5px;
-  border-left: 3px solid #28250d;
   margin-bottom: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  opacity: 89%;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.poem-image {
+  background-image: url("images/daisy_.jpeg");
+  display: flex;
+  border-radius: 6px;
+  opacity: 60%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 footer {
   text-align: center;
   font-size: 12px;
   color: grey;
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
